@@ -13,8 +13,6 @@ of the string to the end while keeping all remaining characters in their origina
 
 * String Indexing: `text[0]` - it is a line of code that extracts a character positioned at index 0.
 * String Slicing: `text[1:]` - extracts the character starting from index 1 to the last index.
-* Input: `word = input("Enter a word: ")` - prompts the user to input whatever word they want. it is then stored in the variable `word`
-* Print: `print("Rotated word:", rotate_word(text))` - the stored data is then printed and rotated.
 
 #### CODE
 ```python
@@ -22,8 +20,6 @@ of the string to the end while keeping all remaining characters in their origina
 def rotate_word(text):
   return text[1:] + text[0]
 
-word = input("Enter a word: ")
-print ("Rotated word:", rotate_word(text))
 ```
 
 ## PROBLEM B
@@ -56,12 +52,6 @@ def make_username(firstname, lastname):
 
     return first_name + "." + last_name
 
-## PROBLEM C
-first_name = input("Enter first name: ")
-last_name = input("Enter last name: ")
-
-print("Username:", make_username(first_name, last_name))
-
 ```
 
 ## PROBLEM C
@@ -81,23 +71,12 @@ The elements in middle must remain in their original order.
 2. everything in the middle after.
 3. first at the end.
 
-`items = [1, 2, 3, 4, 5]` - i created a list then stored it in the variable `items`.
-
-`result = swap_bookends(items)` - calls the function and then it gives the items list.
-
 #### CODE
 ```python
 
 def swap_bookends(items):
     first, *middle, last = items
     return [last, *middle, first]
-
-items = [1, 2, 3, 4, 5]
-
-result = swap_bookends(items)
-
-print(result)
-print(items)
 
 ```
 
