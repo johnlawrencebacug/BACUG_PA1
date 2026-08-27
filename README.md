@@ -67,6 +67,7 @@ print("Username:", make_username(first_name, last_name))
 ## PROBLEM C
 Create a function named swap bookends() that accepts a list containing at least two elements. Unpack
 the list into three variables:
+
 • first – the first element;
 • middle – a list containing everything between the first and last elements; and
 • last – the last element.
@@ -74,11 +75,14 @@ Using these variables, return a new list in which the first and last elements ha
 The elements in middle must remain in their original order.
 
 `first, *middle, last = items` - this is extended sequence unpacking. The *middle means "put everything between the first and last elements into a list called middle."
+
 `return [last, *middle, first]` - this creates a new list.
 1. last first
 2. everything in the middle after.
 3. first at the end.
+
 `items = [1, 2, 3, 4, 5]` - i created a list then stored it in the variable `items`.
+
 `result = swap_bookends(items)` - calls the function and then it gives the items list.
 
 #### CODE
